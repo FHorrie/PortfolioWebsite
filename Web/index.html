@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="header-bg"></div>
+    <div class="container">
+      <header>
+        <div class="name-block">
+          <h1>Finian Horrie</h1>
+          <h2>C++/C# Gameplay Programmer<br />& Designer</h2>
+        </div>
+        <div class="icon-block">
+          <a class="icon" href="https://github.com/FHorrie"><ion-icon name="logo-github"></ico-icon></a>
+          <a class="icon" href="https://www.youtube.com/@FinianHorrie"><ion-icon name="logo-youtube"></ico-icon></a>
+          <a class="icon" href="https://www.linkedin.com/in/finian-horrie/"><ion-icon name="logo-linkedin"></ico-icon></a>
+          <a class="icon" href="mailto::finian.horrie@gmail.com"><ion-icon name="mail-outline"></ico-icon></a>
+        </div>
+      </header>
+      <span class="guide-buttons-block">
+        <a href="#c1" class="button">Projects</a>
+        <a href="#c2" class="button">About Me</a>
+        <a href="#c3" class="button">Contact Me</a>
+        <a href="resources/CV_Finian_English.pdf" class="button" download>
+          Resume
+        </a>
+      </span>
+      <div class="screen-line"></div>
+      <h1 id="c1">Projects</h1>
+      <div class="head-projects-grid">
+        <!-- Project 1 -->
+        <a href="pages/slipfights.html" class="head-project p1" data-tilt>
+          <img src="images/games/SlipFights500x500.jpg" alt="" />
+          <div class="description">
+            <h2>SlipFights</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              necessitatibus mollitia quasi! Tenetur ipsa assumenda quisquam
+              harum id deleniti ut.
+            </p>
+            <div>
+              <span class="tag">Action</span>
+              <span class="tag">4 Players</span>
+              <span class="tag">Top-Down</span>
+              <span class="tag">Couch PvP</span>
+            </div>
+          </div>
+        </a>
+        <!-- Project 2 -->
+        <a href="pages/halozero.html" class="head-project p2" data-tilt>
+          <img src="images/games/HaloZero500x500.jpg" alt="" />
+          <div class="description">
+            <h2>Halo: Zero</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              necessitatibus mollitia quasi! Tenetur ipsa assumenda quisquam
+              harum id deleniti ut.
+            </p>
+            <div>
+              <span class="tag">Action</span>
+              <span class="tag">Singleplayer</span>
+              <span class="tag">2D</span>
+              <span class="tag">Shooter</span>
+            </div>
+          </div>
+        </a>
+        <!-- Project 3 -->
+        <a href="pages/catastrophe.html" class="head-project p3" data-tilt>
+          <img src="images/games/CATastrophe500x500.jpg" alt="" />
+          <div class="description">
+            <h2>CATastrophe</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+              necessitatibus mollitia quasi! Tenetur ipsa assumenda quisquam
+              harum id deleniti ut.
+            </p>
+            <div>
+              <span class="tag">Casual</span>
+              <span class="tag">Singleplayer</span>
+              <span class="tag">3D</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="small-project-grid">
+        <!-- Small Proj 1 -->
+        <a href="#" class="small-project" data-tilt>
+          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        </a>
+        <!-- Small Proj 2 -->
+        <a href="#" class="small-project" data-tilt>
+          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        </a>
+        <!-- Small Proj 3 -->
+        <a href="#" class="small-project" data-tilt>
+          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        </a>
+        <!-- Small Proj 4 -->
+        <a href="#" class="small-project" data-tilt>
+          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        </a>
+      </div>
+      <div class="screen-line"></div>
+      <!-- "About Me" Section -->
+      <h1 id="c2">About Me</h1>
+      <div class="text-block">
+        <p>
+          Hi! I am Finian. <br>
+          I'm a junior C++/C# programmer specializing in
+          gameplay programming
+          and game design. I am currently studying game development (final
+          year). <br>
+          This final year has me working on a group project spanning 3 months and
+          an internship to boot.
+          After, I graduate with a bachelors degree in game development. <br> <br>
+          
+          My main skills lie in developing in established engines such as UE or
+          Unity, but I do enjoy
+          learning a new engine or new development practices that deviate from
+          what I've grown accustomed to.
+        </p>
+      </div>
+      <div class="screen-line"></div>
+      <h1 id="c3">Contact Me</h1>
+    </div>
+    <!-- .js script linking -->
+    <!-- Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Tilt -->
+    <script src="../js/vanilla-tilt.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+:root {
+  --primary-color: #089bdb;
+  --secondary-color: #8ec1e7;
+  --accent-color: #f2b64f;
+  --body-color: #c7cddb;
+  --body-alt-color: #111;
+  --body-project-color: #303030;
+  --scale-up: 1.05;
+  --scale-down: 0.98;
+}
+
+/* ICON COLORS */
+ion-icon {
+  color: white;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #1b1b1b;
+  font-size: 1.2rem;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  margin-left: 1rem;
+  color: white;
+}
+
+p {
+  margin-left: 1rem;
+  color: var(--body-color);
+}
+
+a,
+a:visited,
+a:active {
+  justify-content: center;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+/* Header */
+.header-bg {
+  background: linear-gradient(90deg, #003045, #0f568a);
+  height: 32rem;
+  width: 100vw;
+  position: absolute;
+  z-index: -1;
+}
+
+header {
+  height: 32rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon-block {
+  display: grid;
+  height: 10rem;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 1rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.guide-buttons-block {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.button {
+  width: 18rem;
+  height: 6rem;
+  margin: auto;
+
+  background: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10rem;
+  color: var(--body-alt-color);
+
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.8rem;
+
+  transition: transform 0.15s;
+}
+
+.button:hover {
+  transform: scale(var(--scale-up));
+}
+
+.button:active {
+  transform: scale(var(--scale-down));
+}
+
+/* Projects */
+
+.head-projects-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-areas:
+    "project1 project1 project2 project2"
+    ".        project3 project3 .       ";
+}
+
+.p1 {
+  box-shadow: 0 0 10px 0.5rem #fff6;
+  grid-area: project1;
+}
+
+.p2 {
+  grid-area: project2;
+}
+
+.p3 {
+  grid-area: project3;
+}
+
+.head-project {
+  margin: 2rem;
+  height: 25rem;
+  background: var(--body-project-color);
+  border-radius: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.head-project img {
+  height: 25rem;
+  margin: 0;
+  display: inline;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 0 1px white;
+}
+
+.head-project .description {
+  height: 24rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.2rem;
+}
+
+.small-project-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.small-project {
+  margin: 2rem auto;
+}
+
+.small-project img {
+  height: 24rem;
+  margin: 0;
+  display: inline;
+  border-radius: 2.5rem;
+  box-shadow: 0 0 0 1px white;
+}
+
+.tag {
+  border-radius: 20px;
+  margin-right: 0.3rem;
+  line-height: 2.5;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  width: fit-content;
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* About Me */
+.text-block {
+  max-width: 60%;
+}
+
+/* Extra */
+.screen-line {
+  height: 1px;
+  background: white;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.icon {
+  font-size: 3rem;
+}
+
+.icon {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+
+  transition: font-size 0.2s;
+}
+
+.icon:hover {
+  font-size: 3.2rem;
+}
+
+.icon:active {
+  font-size: 2.8rem;
+}
+
+/* Project Page */
+.project-front {
+  display: flex;
+  margin-top: 20px;
+}
+
+.project-front img {
+  width: 50%;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-right: 2rem;
+}
+
+.project-front .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.2rem;
+}
+
+.project-front .icon {
+  font-weight: 900;
+}
