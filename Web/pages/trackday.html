@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/carousel.js" defer></script>
+    <title>Project: Track Day</title>
+</head>
+<body>
+  <div class="container">
+    <div class="project-front">
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/cdjT9hrdCas?si=D1vcWqln2RAGbyxu&autoplay=1&mute=1" 
+          allowfullscreen allow="autoplay">
+        </iframe>
+      </div>
+      <div class="description">
+        <div style="margin: 0 1rem;">
+          <span class="tag">Racing</span>
+          <span class="tag">Simulation</span>
+          <span class="tag">Multiplayer</span>
+          <span class="tag">3D</span>
+          <span class="tag alt">Unity</span>
+          <span class="tag alt">Solo</span>
+        </div>
+        <h1>Track Day</h1>
+        <h3>Arcade driving sim with simple but detailed physics</h3>
+        <p>
+          Currently being made as a passion project, Track Day will be a racing game for up to 4 players.<br>
+          Players can choose from a couple of tracks and cars to compete against each other.<br>
+          It uses custom arcade driving physics to do suspension and driving based on spherecasting.<br><br>
+
+          Car model made by the wonderful <a class="link-text" href="https://sketchfab.com/EmilijaJuknyte" target="_blank">Emilija Juknyte</a> 
+        </p>
+        <h3>Greatest Difficulty</h3>
+        <p>
+          For this project, most internet resources embed the wheels into the rigidbody.<br>
+          I made the wheels function separately to allow easy reuse (and the creation of unorthodox car design).<br>
+          This process was quite difficult.
+        </p>
+        <div class="project-front-button">
+          <a href="https://github.com/FHorrie/TrackDay" target="_blank" class="button project-page">GitHub page</a>
+        </div>
+      </div>
+      <div class="default-2-grid">
+        <img src="../images/games/TrackDay/TrackDay_1_1000x1000.avif" alt="" class="game-image">
+        <img src="../images/games/TrackDay/TrackDay_2_1000x1000.avif" alt="" class="game-image">
+      </div>
+      <a href="../index.html" class="icon">&#10005</a>
+    </div>
+  </div>
+  <!-- .js script linking -->
+  <!-- Icons -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <!-- Tilt -->
+  <script src="../js/vanilla-tilt.js"></script>
+  </body>
+</html>

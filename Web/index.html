@@ -3,146 +3,584 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Main Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Kanit:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio Main Page</title>
   </head>
   <body>
+    <span class="navbar">
+      <div class="navbar-button-container">
+        <div style="display: flex; flex-direction: column">
+          <a href="#c1" class="button">Projects</a>
+          <a href="#c2" class="button">About Me</a>
+          <a href="#c3" class="button">Skills</a>
+          <a href="#c4" class="button">Contact Me</a>
+        </div>
+        <p><ion-icon name="chevron-forward-outline"></ion-icon></p>
+      </div>
+    </span>
     <div class="header-bg"></div>
     <div class="container">
       <header>
         <div class="name-block">
-          <h1>Finian Horrie</h1>
-          <h2>C++/C# Gameplay Programmer<br />& Designer</h2>
+          <h1 style="font-size: 5rem">Finian Horrie</h1>
+          <h2>C++/C# Gameplay Programmer</h2>
         </div>
         <div class="icon-block">
-          <a class="icon" href="https://github.com/FHorrie"><ion-icon name="logo-github"></ico-icon></a>
-          <a class="icon" href="https://www.youtube.com/@FinianHorrie"><ion-icon name="logo-youtube"></ico-icon></a>
-          <a class="icon" href="https://www.linkedin.com/in/finian-horrie/"><ion-icon name="logo-linkedin"></ico-icon></a>
-          <a class="icon" href="mailto::finian.horrie@gmail.com"><ion-icon name="mail-outline"></ico-icon></a>
+          <a class="icon" href="mailto:mail@finianhorrie.com" target="_blank"
+            ><ion-icon name="mail-outline"></ion-icon
+          ></a>
+          <a
+            class="icon"
+            href="https://www.linkedin.com/in/finian-horrie/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+          <a class="icon" href="https://github.com/FHorrie" target="_blank">
+            <ion-icon name="git-branch"></ion-icon>
+          </a>
+          <a
+            class="icon"
+            href="https://www.youtube.com/@FinianHorrie"
+            target="_blank"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
         </div>
       </header>
-      <span class="guide-buttons-block">
-        <a href="#c1" class="button">Projects</a>
-        <a href="#c2" class="button">About Me</a>
-        <a href="#c3" class="button">Contact Me</a>
-        <a href="resources/CV_Finian_English.pdf" class="button" download>
-          Resume
-        </a>
-      </span>
-      <div class="screen-line"></div>
-      <h1 id="c1">Projects</h1>
-      <div class="head-projects-grid">
-        <!-- Project 1 -->
-        <a href="pages/slipfights.html" class="head-project p1" data-tilt>
-          <img src="images/games/SlipFights500x500.jpg" alt="" />
+      <h1 id="c1">Professional Projects</h1>
+      <div class="default-4-grid">
+        <!-- Professional Project 1 -->
+        <a href="pages/forefront.html" class="head-project" data-tilt>
+          <img
+            src="images/games/Forefront/Forefront_Thumb.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/Forefront/Forefront_Anim.webp" alt="" />
           <div class="description">
-            <h2>SlipFights</h2>
+            <h2 style="line-height: 1.15">Forefront</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              necessitatibus mollitia quasi! Tenetur ipsa assumenda quisquam
-              harum id deleniti ut.
+              The Next Evolution of VR Warfare. Forefront delivers an all-out
+              war experience like never before in VR. Engage in massive
+              32-player battles across a variety of expansive, destructible
+              environments, where strategy, skill, and teamwork decide the
+              outcome.
             </p>
             <div>
-              <span class="tag">Action</span>
-              <span class="tag">4 Players</span>
-              <span class="tag">Top-Down</span>
-              <span class="tag">Couch PvP</span>
-            </div>
-          </div>
-        </a>
-        <!-- Project 2 -->
-        <a href="pages/halozero.html" class="head-project p2" data-tilt>
-          <img src="images/games/HaloZero500x500.jpg" alt="" />
-          <div class="description">
-            <h2>Halo: Zero</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              necessitatibus mollitia quasi! Tenetur ipsa assumenda quisquam
-              harum id deleniti ut.
-            </p>
-            <div>
-              <span class="tag">Action</span>
-              <span class="tag">Singleplayer</span>
-              <span class="tag">2D</span>
+              <span class="tag">16v16</span>
               <span class="tag">Shooter</span>
+              <span class="tag">Big Maps</span>
+              <span class="tag">Vehicles</span>
+              <span class="tag alt">Unity</span>
+              <span class="tag alt">VR</span>
             </div>
           </div>
         </a>
-        <!-- Project 3 -->
-        <a href="pages/catastrophe.html" class="head-project p3" data-tilt>
-          <img src="images/games/CATastrophe500x500.jpg" alt="" />
+        <!-- Professional Project 2 -->
+        <a href="pages/breachers.html" class="head-project" data-tilt>
+          <img
+            src="images/games/Breachers/Breachers_Thumb.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/Breachers/Breachers_Anim.webp" alt="" />
           <div class="description">
-            <h2>CATastrophe</h2>
+            <h2 style="line-height: 1.15">Breachers</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
-              necessitatibus mollitia quasi! Tenetur ipsa assumenda quisquam
-              harum id deleniti ut.
+              Experience heart-pounding,
+              tactical multiplayer combat where strategy meets chaos. Choose
+              your side and immerse yourself in thrilling
+              close-quarters battles. With stunning environments and dynamic
+              gameplay.
             </p>
             <div>
-              <span class="tag">Casual</span>
-              <span class="tag">Singleplayer</span>
-              <span class="tag">3D</span>
+              <span class="tag">Competitive</span>
+              <span class="tag">Shooter</span>
+              <span class="tag">Teamwork</span>
+              <span class="tag">Tactical</span>
+              <span class="tag alt">Unity</span>
+              <span class="tag alt">VR</span>
+            </div>
+          </div>
+        </a>
+        <!-- Leave a space open -->
+        <a></a>
+        <!-- Professional Project 3 -->
+        <a href="pages/hyperdash.html" class="head-project" data-tilt>
+          <img
+            src="images/games/HyperDash/HyperDash512x512.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/HyperDash/HyperDash_Anim.webp" alt="" />
+          <div class="description">
+            <h2 style="line-height: 1.15">Hyper Dash</h2>
+            <p>
+              Step into Hyper Dash, the free-to-play VR sensation where
+              teamwork, speed, and strategy collide. Experience heart-racing
+              action across diverse maps and game modes that will keep you
+              coming back for more!
+            </p>
+            <div>
+              <span class="tag">Arena Shooter</span>
+              <span class="tag">Competitive</span>
+              <span class="tag alt">Unity</span>
+              <span class="tag alt">VR</span>
             </div>
           </div>
         </a>
       </div>
-      <div class="small-project-grid">
+      <h1>In progress</h1>
+      <div class="default-4-grid">
+        <!-- Progress Project 1 -->
+        <a href="pages/trackday.html" class="head-project" data-tilt>
+          <img
+            src="images/games/TrackDay/TrackDay500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/TrackDay/TrackDay_Anim.webp" alt="" />
+          <div class="description">
+            <h2>Track Day</h2>
+            <p>
+              Currently being made as a passion project, Track Day will be a
+              racing game for up to 4 players.<br />
+              Players can choose from a couple of tracks and cars to compete
+              against eachother.<br />
+              It uses custom arcade driving physics to do suspension and driving
+              based on spherecasting.<br />
+            </p>
+            <div>
+              <span class="tag">Racing</span>
+              <span class="tag">Simulation</span>
+              <span class="tag">Multiplayer</span>
+              <span class="tag alt">Unity</span>
+              <span class="tag alt">Solo</span>
+            </div>
+          </div>
+        </a>
+        <!-- Progress Project 2 -->
+        <a href="pages/vrguns.html" class="head-project" data-tilt>
+          <img
+            src="images/games/VRGuns/VRGuns500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/VRGuns/VRGuns_Anim.webp" alt="" />
+          <div class="description">
+            <h2>VR Guns</h2>
+            <p>
+              As my first experience in VR development, VR Guns is a project
+              that exists purely for me to explore VR possibilities<br />
+              I do not have intentions to bring this to a final state. However
+              should have many features like opening doors,<br />
+              different types of guns and a basic enemy or target.<br /><br />
+
+              Currently it has 1 weapon, locomotion, teleportation and basic
+              physics.
+            </p>
+            <div>
+              <span class="tag">VR</span>
+              <span class="tag">Tech Demo</span>
+              <span class="tag">Singleplayer</span>
+              <span class="tag alt">Unity</span>
+              <span class="tag alt">Solo</span>
+            </div>
+          </div>
+        </a>
+        <!-- Takes up one grid slot -->
+      </div>
+      <h1 id="c1">Previous Projects</h1>
+      <div class="default-4-grid">
+        <!-- Project 1 -->
+        <a href="pages/owh.html" class="head-project" data-tilt>
+          <img
+            src="images/games/OWH/OWH500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/OWH/OWH_Anim.webp" alt="" />
+          <div class="description">
+            <h2 style="line-height: 1.15">Otters & Wizard Hats</h2>
+            <p>
+              Otters and Wizard Hats is a 4 player co-op roguelike with a twist.
+              Players must traverse the magical school in search of a the
+              legendary wizard hat. During their adventure, the group will fight
+              many enemies in different parts of the school. <br />
+            </p>
+            <div>
+              <span class="tag">Roguelike</span>
+              <span class="tag">Multiplayer</span>
+              <span class="tag alt">Unreal C++</span>
+              <span class="tag alt">Team</span>
+            </div>
+          </div>
+        </a>
+        <!-- Project 2 -->
+        <a href="pages/slipfights.html" class="head-project" data-tilt>
+          <img
+            src="images/games/SlipFights/SlipFights500x500.avif"
+            class="cover-image"
+          />
+          <img src="images/games/SlipFights/SlipFights_Anim.webp" />
+          <div class="description">
+            <h2>SlipFights</h2>
+            <p>
+              SlipFights is a couch-pvp arena shooter in which 4 outlaws duel it
+              out in Cactus Town. Pick from a wide arrange of hats to determine
+              your character health and weapon
+            </p>
+            <div>
+              <span class="tag">Action</span>
+              <span class="tag">Couch PvP</span>
+              <span class="tag">2-4 Players</span>
+              <span class="tag alt">Unity</span>
+              <span class="tag alt">Gameplay</span>
+              <span class="tag alt">UI</span>
+            </div>
+          </div>
+        </a>
+        <!-- Project 3 -->
+        <a href="pages/halozero.html" class="head-project" data-tilt>
+          <img
+            src="images/games/HaloZero/HaloZero500x500.avif"
+            class="cover-image"
+          />
+          <img src="images/games/HaloZero/HaloZero_Anim.webp" />
+          <div class="description">
+            <h2>Halo: Zero</h2>
+            <p>
+              Enter John 117, known as Master Chief, during a surprise attack on
+              the Reach Facility. Move quickly and eliminate all Covenant on
+              your path.
+            </p>
+            <div>
+              <span class="tag">Action</span>
+              <span class="tag">Shooter</span>
+              <span class="tag">Singleplayer</span>
+              <span class="tag alt">SDL2 (C++)</span>
+              <span class="tag alt">Solo</span>
+            </div>
+          </div>
+        </a>
+        <!-- Project 4 -->
+        <a href="pages/catastrophe.html" class="head-project" data-tilt>
+          <img
+            src="images/games/CATastrophe/CATastrophe500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/CATastrophe/CATastrophe_Anim.webp" alt="" />
+          <div class="description">
+            <h2>CATastrophe</h2>
+            <p>
+              Made for the Mini-Jam: Explosions, CATastrophe is a puzzle game
+              where you launch cats into various structures to knock down all
+              the fish. The player gets 5 cats to help breaking down
+            </p>
+            <div>
+              <span class="tag">Casual</span>
+              <span class="tag">Puzzle</span>
+              <span class="tag">Singleplayer</span>
+              <span class="tag alt">Unity</span>
+              <span class="tag alt">Game Jam</span>
+              <span class="tag alt">Mesh Slicing</span>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="default-4-grid">
         <!-- Small Proj 1 -->
-        <a href="#" class="small-project" data-tilt>
-          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        <a href="pages/droids.html" class="small-project" data-tilt>
+          <img
+            src="images/games/Droids/Droids500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/Droids/Droids_Anim.webp" alt="" />
         </a>
         <!-- Small Proj 2 -->
-        <a href="#" class="small-project" data-tilt>
-          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        <a href="pages/digger.html" class="small-project" data-tilt>
+          <img
+            src="images/games/Digger/Digger500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/Digger/Digger_Anim.webp" alt="" />
+          <!-- <div class="description">
+            <h2>Digger</h2>
+            <p>
+              Made to display the capabilities of my own engine, Digger is a
+              simple arcade game where the player needs to score as high as
+              possible before eliminating all goblins or
+            </p>
+            <div>
+              <span class="tag">Arcade</span>
+              <span class="tag">Prototype</span>
+              <span class="tag">Singleplayer</span>
+              <span class="tag alt">SDL2 (C++)</span>
+              <span class="tag alt">Solo</span>
+            </div>
+          </div> -->
         </a>
         <!-- Small Proj 3 -->
-        <a href="#" class="small-project" data-tilt>
-          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        <a
+          href="pages/teleportersandsnakes.html"
+          class="small-project"
+          data-tilt
+        >
+          <img
+            src="images/games/TeleportersAndSnakes/TAndS500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img src="images/games/TeleportersAndSnakes/TAndS_Anim.webp" alt="" />
         </a>
         <!-- Small Proj 4 -->
-        <a href="#" class="small-project" data-tilt>
-          <img src="images/games/HaloZero500x500.jpg" alt="" />
+        <a href="pages/altagency.html" class="small-project" data-tilt>
+          <img
+            src="images/games/AlternateAgency/AlternateAgency_500x500.avif"
+            alt=""
+            class="cover-image"
+          />
+          <img
+            src="images/games/AlternateAgency/AlternateAgency_Anim.webp"
+            alt=""
+          />
         </a>
       </div>
       <div class="screen-line"></div>
       <!-- "About Me" Section -->
       <h1 id="c2">About Me</h1>
       <div class="text-block">
+        <img src="images/pers/PFP500x500.avif" alt="" />
         <p>
-          Hi! I am Finian. <br>
-          I'm a junior C++/C# programmer specializing in
-          gameplay programming
-          and game design. I am currently studying game development (final
-          year). <br>
-          This final year has me working on a group project spanning 3 months and
-          an internship to boot.
-          After, I graduate with a bachelors degree in game development. <br> <br>
-          
-          My main skills lie in developing in established engines such as UE or
-          Unity, but I do enjoy
-          learning a new engine or new development practices that deviate from
-          what I've grown accustomed to.
+          Hi, I'm Finian!<br />
+          I'm a passionate game developer with experience in making FPS games and CO-OP games.<br />
+          My fascination for games and tech started at a young age.<br />
+          From Star Wars Battlefront II being able to run on my PSP,<br />
+          to creating levels for others to enjoy in LittleBigPlanet.<br /><br />
+
+          The concept of game development, allowing other people to experience my admiration, <br />
+          is something that allowed me to become a passionate game developer.<br /><br />
+
+          As a game developer I work and learn at a quick pace. Being presented with a unique problem <br/>
+          or task is where I shine. I'm easy going and always ready for a quick chat! <br/><br/>
+
+          I am also hardware smart and build PC's in my free time!
         </p>
       </div>
+       <!--
+        <div class="project-front-button" style="width: 10rem;">
+          <a href="resources/CV_Finian_English.pdf" download="Resume_Finian" class="button" style="border-radius: 10rem;">
+            <ion-icon style="margin-right: 2px;" name="download"></ion-icon>Resume
+          </a>
+        </div>
+       -->
       <div class="screen-line"></div>
-      <h1 id="c3">Contact Me</h1>
+      <h1 id="c3">Skills</h1>
+      <h2>Languages</h2>
+      <div class="default-3-grid skills">
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">C++</p>
+          </div>
+          <p class="skill-text skill-prof">
+            <a class="link-text" href="pages/halozero.html">Halo: Zero</a>,
+            <a class="link-text" href="pages/digger.html">Digger</a>,
+            <a class="link-text" href="pages/teleportersandsnakes.html"
+              >Teleporters & Snakes</a
+            >,
+            <a class="link-text" href="pages/owh.html">OWH</a>
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">C#</p>
+          </div>
+          <p class="skill-text skill-prof">
+            <a class="link-text" href="pages/slipfights.html">SlipFights</a>,
+            <a class="link-text" href="pages/hyperdash.html">Hyper Dash</a>,
+            <a class="link-text" href="pages/trackday.html">Track Day</a>,
+            <a class="link-text" href="pages/trackday.html">VRGuns</a>
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">HTML, CSS, JS</p>
+          </div>
+          <p class="skill-text skill-prof">This website</p>
+        </div>
+      </div>
+      <h2>Engines</h2>
+      <div class="default-3-grid skills">
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Unreal Engine</p>
+          </div>
+          <p class="skill-text skill-prof">
+            <a class="link-text" href="pages/droids.html">Droids</a>,
+            <a class="link-text" href="pages/corridor.html">Corridor</a>,
+            <a class="link-text" href="pages/owh.html">OWH</a>,
+            <a class="link-text" href="pages/teleportersandsnakes.html"
+              >Teleporters & Snakes</a
+            >
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Unreal C++</p>
+          </div>
+          <p class="skill-text skill-prof">
+            <a class="link-text" href="pages/owh.html">Otters & Wizard Hats</a>,
+            <a class="link-text" href="pages/teleportersandsnakes.html"
+              >Teleporters & Snakes</a
+            >
+          </p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Unity</p>
+          </div>
+          <p class="skill-text skill-prof">
+            <a class="link-text" href="pages/forefront.html">Forefront</a>,
+            <a class="link-text" href="pages/breachers.html">Breachers</a>,
+            <a class="link-text" href="pages/hyperdash.html">Hyper Dash</a>,
+            <a class="link-text" href="pages/slipfights.html">SlipFights</a>
+          </p>
+        </div>
+      </div>
+      <h2>Source Control</h2>
+      <div class="default-3-grid skills">
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Git</p>
+          </div>
+          <p class="skill-text skill-prof">Advanced</p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Perforce</p>
+          </div>
+          <p class="skill-text skill-prof">Advanced</p>
+        </div>
+      </div>
+      <h2>API's</h2>
+      <div class="default-3-grid skills">
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Vulkan</p>
+          </div>
+          <p class="skill-text skill-prof">Notions</p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">SDL</p>
+          </div>
+          <p class="skill-text skill-prof">Notions</p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">DirectX</p>
+          </div>
+          <p class="skill-text skill-prof">Notions</p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">QT</p>
+          </div>
+          <p class="skill-text skill-prof">Notions</p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">WPF</p>
+          </div>
+          <p class="skill-text skill-prof">Notions</p>
+        </div>
+      </div>
+      <h2>IDE's</h2>
+      <div class="default-3-grid skills">
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Rider</p>
+          </div>
+          <p class="skill-text skill-prof">Advanced</p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">Visual Studio</p>
+          </div>
+          <p class="skill-text skill-prof">Intermediate</p>
+        </div>
+        <div class="skill-box">
+          <div class="half-box">
+            <p class="skill-text skill-name">VS Code</p>
+          </div>
+          <p class="skill-text skill-prof">Intermediate</p>
+        </div>
+      </div>
+      <div class="screen-line"></div>
+      <h1 id="c4">Contact Me</h1>
+      <div class="text-block">
+        <p>
+          Interested in adding me to your team? Send me an
+          <a
+            class="link-text"
+            href="mailto:mail@finianhorrie.com"
+            target="_blank"
+          >
+            e-mail
+          </a>
+          or reach out via
+          <a class="link-text" href="https://www.linkedin.com/in/finian-horrie/"
+            >LinkedIn
+          </a>
+          <br />
+          I will reply to you as soon as possible. <br /><br />
+
+          Please only send me work related mails or job opportunities<br />
+        </p>
+      </div>
     </div>
+    <footer>
+      <div class="icon-block">
+        <a class="icon" href="mailto:mail@finianhorrie.com" target="_blank"
+          ><ion-icon name="mail-outline"></ion-icon
+        ></a>
+        <a
+          class="icon"
+          href="https://www.linkedin.com/in/finian-horrie/"
+          target="_blank"
+          ><ion-icon name="logo-linkedin"></ion-icon
+        ></a>
+        <a class="icon" href="https://github.com/FHorrie" target="_blank"
+          ><ion-icon name="git-branch"></ion-icon
+        ></a>
+        <a
+          class="icon"
+          href="https://www.youtube.com/@FinianHorrie"
+          target="_blank"
+          ><ion-icon name="logo-youtube"></ion-icon
+        ></a>
+      </div>
+      &copy; Finian Horrie <br />
+      Updated November 2025
+    </footer>
     <!-- .js script linking -->
     <!-- Icons -->
     <script
       type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"
     ></script>
     <!-- Tilt -->
     <script src="../js/vanilla-tilt.js"></script>

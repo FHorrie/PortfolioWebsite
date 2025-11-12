@@ -3,35 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project: Halo Zero</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
-      rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+    rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/carousel.js" defer></script>
+    <title>Project: Halo Zero</title>
 </head>
 <body>
   <div class="container">
     <div class="project-front">
-      <img src="../images/games/HaloZero1000x1000.jpg" alt="" />
+      <div class="video-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/nZ-2--HTVaM?si=1yeSPVvDjmxZn_IC&autoplay=1&mute=1" 
+          allowfullscreen allow="autoplay">
+        </iframe>
+      </div>
       <div class="description">
-        <h1>Halo: Zero</h1>
-        <h3>Fight the Covenant inside a Reach facility</h3>
-        <p>
-          Halo Zero is a fan made Halo game that I remade in GL with a custom engine
-          <br />Enter John 117, known as Master Chief during a surprise attack on the Reach Facility
-          <br />Move quickly and eliminate all Covenant on your path
-        </p>
-        <div>
+        <div style="margin: 0 1rem;">
           <span class="tag">Action</span>
+          <span class="tag">Platformer</span>
           <span class="tag">Singleplayer</span>
           <span class="tag">2D</span>
           <span class="tag">Shooter</span>
+          <span class="tag alt">SDL2 (C++)</span>
         </div>
-      </div> 
+        <h1>Halo: Zero</h1>
+        <h3>Halo: Zero, remade in SDL2 using a custom engine</h3>
+        <p>
+          Enter John 117, known as Master Chief, during a surprise attack on the Reach Facility.<br />
+          Move quickly and eliminate all Covenant on your path as you are the key to stopping this invasion! <br>
+          Pick up guns and ammo along the way to make sure you can finish the fight. <br>
+          Do you have what it takes to save Reach?<br><br>
+
+          Halo: Zero is a project I made approximately 6 months after starting my learning journey in C++<br>
+          The project is made in a custom SDL2 framework provided by Howest Digital Arts & Entertainment.<br>
+          It was a major leap in my development knowledge and skills, as it was the first big project I made
+        </p>
+        <h3>Greatest Difficulty</h3>
+        <p>
+          Since this game uses spritesheets by default, so for my rework, i wanted to "modernize" this<br>
+          for master chief's torso. Instead of uisng a sprite sheet for rotation, I wanted continuous rotation<br>
+          based on mouse position which was harder to figure out than expected.<br>
+          The UI was also equally interesting to figure out, however this was less of a time sink.
+        </p>
+        <div class="project-front-button">
+          <a href="https://github.com/FHorrie/HaloZeroGL2" target="_blank" class="button project-page">GitHub page</a>
+        </div>
+      </div>
+      <div class="default-2-grid">
+        <img src="../images/games/HaloZero/HaloZero_1_1000x1000.avif" alt="" class="game-image">
+        <img src="../images/games/HaloZero/HaloZero_2_1000x1000.avif" alt="" class="game-image">
+        <img src="../images/games/HaloZero/HaloZero_3_1000x1000.avif" alt="" class="game-image">
+        <img src="../images/games/HaloZero/HaloZero_4_1000x1000.avif" alt="" class="game-image">
+      </div>
       <a href="../index.html" class="icon">&#10005</a>
     </div>
   </div>
